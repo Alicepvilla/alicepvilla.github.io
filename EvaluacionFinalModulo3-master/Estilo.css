@@ -1,0 +1,562 @@
+/* header*/
+.header-int{
+    background: #654594;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #654594, #c92b87);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #654594, #c92b87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    margin: 0px 0px;
+    padding: 1px 0px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 100%;
+    text-align: center;
+    color: mintcream;
+}
+header{
+    background: #654594;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #654594, #c92b87);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #654594, #c92b87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    margin: 0px 0px;
+    padding: 1px 0px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: mintcream;
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: end;
+    color: #232323;
+    margin: 10px 0px;
+}
+.link-nav{
+    font-family: 'Montserrat', sans-serif;
+    text-align: end;
+    font-weight: 500;
+    color: #654594;
+    margin: 10px 0px;
+}
+.link-actual-nav{
+    background-color: antiquewhite;
+    margin: 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: end;
+} 
+a:hover{
+    background-color: #654594 ;
+    color: antiquewhite;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+html {
+    background-color: #F9F2F6;
+}
+
+/* main index*/
+.con_integrante{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.integrante{
+    color: #232323;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    float: left;
+
+}
+
+.integrante h1{
+    font-weight: 500;
+    font-family: 'Rock Salt', cursive;
+    font-size: 90%;
+}
+.integrante h3{
+    font-weight: 300;
+    font-size: 80%;
+    margin: -2% 0% 0% 0%;
+}
+
+.integrante p{
+    font-weight: 400;
+    text-align: justify;
+    margin: 2% 0% 5% 0%;
+    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* main paginas auxiliares*/
+main p{
+    text-align: justify;
+    margin: 2% 0% 5% 0%;
+    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    float:right;
+  
+}
+main ul{
+    margin: 2% 0% 5% 5%;
+    font-family: 'Montserrat', sans-serif;
+    float:left;
+}
+
+.div-text h1{
+    text-align: center;
+    float:left;
+}
+
+.cont-div{
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+}
+.aside{
+    height: auto;
+    float: left;
+}
+
+.aside-img {
+    height: auto;
+    width: 80%;
+    float: right;
+}
+
+.reoutfit{
+    font-family: 'Rock Salt', cursive;
+    color: #0f0606;
+    text-align: center;
+}
+/*Footer*/
+
+.wave {
+    height: auto;
+    width: 100%;
+    float: left;
+}
+footer h4{
+    background-color: #654594;
+    color: aliceblue;
+    margin: 0%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.divinicio{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+    color: #ff0000;
+    background-image: url("img/fondo\ -\ copia.jpg");
+    height: 500px;
+    
+    
+}
+.divinicio p{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 50px;
+}
+.fondoM{
+    background-color: whitesmoke;
+}
+.link-nav1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: end;
+    font-weight: 500;
+    color: #c00000;
+    margin: 10px 0px;
+}
+.link-actual-nav1{
+    color: gray;
+    margin: 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: end;
+} 
+a:hover{
+    background-color: gray ;
+    color: white;
+}
+.divMenchoy{
+    padding: 10px 0px 0px 0px;
+}
+
+.divBienvenidos p{
+    color: black;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+    padding: 0cm 0cm 0cm 0cm;
+    
+}
+.divNosotros{
+width: 50%;
+float: left;
+text-align: center;
+padding: 10px 10px 80px 20px;
+}
+body p{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+#footer{
+    background-image: url("img/fondo\ -\ copia.jpg");
+    color: gray;
+} 
+#footer h1{
+    color: #ff0000;
+}
+
+/*
+Prueba 
+*/
+.prueba {
+	background: #444;
+	margin: 0;
+	font-family: monospace;
+}
+
+.prueba h1 {
+	color: #fff;
+	text-align: center;
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li {
+	margin: 10px;
+}
+
+.galeria img {
+	width: 200px;
+	height: 200px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+/* PRUEBA NAV BAR*/
+.navbar {
+    float: right;
+    overflow: hidden;
+    background-color: #232323;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+  
+  }
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+ .logo{
+     float: left;
+     padding-left: 3%;
+ }
+@media only screen and (min-width: 100px)  and (max-width: 555px) {
+  /* For mobile phones: */  
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .integrante img{
+        width: 40%;
+        height: auto;
+     }
+     .div-texto{
+        font-size: 90%;
+    }
+    .reoutfit{
+        font-size: 120%;
+        display:flex;
+    }
+}
+
+@media only screen and (min-width: 556px)  and (max-width: 800px) {
+   /* For tablets: */
+      .col-l-1 {width: 8.33%;}
+      .col-l-2 {width: 16.66%;}
+      .col-l-3 {width: 25%;}
+      .col-l-4 {width: 33.33%;}
+      .col-l-5 {width: 41.66%;}
+      .col-l-6 {width: 50%;}
+      .col-l-7 {width: 58.33%;}
+      .col-l-8 {width: 66.66%;}
+      .col-l-9 {width: 75%;}
+      .col-l-10 {width: 83.33%;}
+      .col-l-11 {width: 91.66%;}
+      .col-l-12 {width: 100%;}
+      .cont-div{
+        display:flex;
+    }
+    .con_integrante{
+        display:flex;
+    }
+    
+    .integrante p{
+        font-size: 80%;
+    }
+    .integrante img{
+        width: 50%;
+        height: auto;
+     }
+     .div-texto{
+        font-size: 100%;
+    }
+    .reoutfit{
+        font-size: 150%;
+        display:flex;
+    }
+ 
+}
+
+@media only screen and  (min-width: 801px) and (max-width: 1200px){
+     /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .cont-div{
+        display:flex;
+    }
+    .con_integrante{
+        display:flex;
+    }
+    .integrante p{
+        font-size: 90%;
+    }
+    .integrante img{
+        width: 80%;
+        height: auto;
+     }
+     .div-texto{
+        font-size: 100%;
+    }
+    .reoutfit{
+        font-size: 220%;
+        display:flex;
+    }
+}
+
+@media only screen and  (min-width: 1201px){
+    /* For desktop: */
+    .col-x-1 {width: 8.33%;}
+    .col-x-2 {width: 16.66%;}
+    .col-x-3 {width: 25%;}
+    .col-x-4 {width: 33.33%;}
+    .col-x-5 {width: 41.66%;}
+    .col-x-6 {width: 50%;}
+    .col-x-7 {width: 58.33%;}
+    .col-x-8 {width: 66.66%;}
+    .col-x-9 {width: 75%;}
+    .col-x-10 {width: 83.33%;}
+    .col-x-11 {width: 91.66%;}
+    .col-x-12 {width: 100%;}
+    .integrante p{
+        font-size: 120%;
+    }
+    .integrante img{
+        width: 40%;
+        height: auto;
+     }
+         .cont-div{
+        display:flex;
+    }
+    .con_integrante{
+        display:flex;
+    }
+    .div-texto{
+        font-size: 120%;
+    }
+    .reoutfit{
+        font-size: 300%;
+        display:flex;
+    }
+    .redes-flotantes {
+        position: fixed;
+        right: 3%;
+        top: 85%;
+        z-index: 20;
+      
+        }
+        .redes-flotantes img {
+        float: right; clear: right;
+         margin: 5px;
+        -moz-transform: scale(.8) ;
+        -webkit-transform: scale(.8) ;
+        -o-transform: scale(.8) ;
+        -ms-transform: scale(.8) ;
+        transform: scale(.8) ;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        background-color: whitesmoke;
+        border-radius: 50%;
+        border-color: whitesmoke;
+        border-width: 5px;
+        }
+        .redes-flotantes img:hover {
+        -moz-transform: scale(1.1) rotate(6deg);
+        -webkit-transform: scale(1.1) rotate(6deg);
+        -o-transform: scale(1.1) rotate(6deg);
+        -ms-transform: scale(1.1) rotate(6deg);
+        transform: scale(1.1) rotate(6deg);
+        }
+    footer{
+        background-image: url("./img/fondo - copia.jpg");
+        color: gray;
+        text-align: center;
+        
+        padding: 3% 5% 10% 0%;
+    } 
+    footer h1{
+        color: #ff0000;
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+    }
+    #cont-footer{
+        display: flex;
+        justify-content: center;
+    }
+    #footer1{
+        float: left;
+        margin: 0% 3% 0% 3%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #footer2{
+        float: left;
+        margin: 0% 3% 0% 3%;
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+    }
+    #footer3{
+        float: left;
+        margin: 0% 3% 0% 3%;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

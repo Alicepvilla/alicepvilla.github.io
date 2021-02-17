@@ -1,0 +1,268 @@
+body{
+    margin: 0%;
+}
+header{
+    background: #5176b8;
+    font-size: 200%;
+    text-align: center;
+    color: mintcream;
+    padding: 2% 0%;
+    margin: 0% 0%;
+}
+.divinicio{
+    height: 150px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    color: #ff0000;
+    background-image: url("./img/fondo - copia.jpg");
+    height: 200px;
+    
+}
+main{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#container-menu{
+    float: left;
+    height: 100%;
+    width: 25%;
+    margin: 0% 5% 10% 1%;
+}
+#container-menu h3{
+    color: slategray;
+    font-size: 100%;
+    text-align: center;
+}
+#ingredientes{
+    align-items: center;
+    margin: 5% 5%;
+    font-family: 'Kaushan Script', cursive;
+}
+.pollo{
+    float: left;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 1% 1%;
+}
+.pollo h4{
+    padding-top: 0%;
+    margin: 1% 0%;
+}
+.carne{
+    float: left;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 1% 1%;
+}
+.carne h4{
+    padding-top: 0%;
+    margin: 1% 0%;
+}
+#camaron{
+    float: left;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 1% 1%;
+}
+#camaron h4{
+    padding-top: 0%;
+    margin: 1% 0%;
+}
+#aji{
+    float: left;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 1% 1%;
+}
+#aji h4{
+    padding-top: 0%;
+    margin: 1% 0%;
+}
+#vegetariano{
+    float: left;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 1% 1%;
+}
+#vegetariano h4{
+    padding-top: 0%;
+    margin: 1% 0%;
+}
+.icon{
+    fill: slategray;
+    transition: background-color .5s;
+}
+.icon :hover{
+    fill: red;
+}
+.categoria{
+    font-family: 'Kaushan Script', cursive;
+    margin: 10% 5%;
+}
+.categoria h2{
+    text-align: center;
+    margin: 10% 0% 3% 0%;
+}
+.categoria button{
+    align-self: center;
+}
+#container-plato{
+    justify-content:space-between;
+    float: left;
+
+}
+.plato{
+    width: auto;
+    float: left;
+    padding: 2px;
+    margin: 2% 1% 2% 1%;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    align-self: center;
+    color: #425B7D;
+}
+.plato h3{
+    padding: 0%;
+    margin: 1% 0% 2% 0%;
+}
+.plato img{
+height: auto;
+width: 90%;
+transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(0);
+}
+  /* The Transformation */
+.plato:hover img {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+  }
+.plato button{
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    height: 46px;
+    width: 46px;
+    position: relative;
+
+}
+.ver-mas{
+    color: slategray;
+    font-weight: 300;
+    font-size: small;
+    text-align: left;
+    padding: 0%;
+    margin: 1% 0% 2% 0%;
+}
+.redes-flotantes {
+    position: fixed;
+    right: 3%;
+    top: 85%;
+    z-index: 20;
+  
+    }
+    .redes-flotantes img {
+    float: right; clear: right;
+     margin: 5px;
+    -moz-transform: scale(.8) ;
+    -webkit-transform: scale(.8) ;
+    -o-transform: scale(.8) ;
+    -ms-transform: scale(.8) ;
+    transform: scale(.8) ;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border-color: whitesmoke;
+    border-width: 5px;
+    }
+    .redes-flotantes img:hover {
+    -moz-transform: scale(1.1) rotate(6deg);
+    -webkit-transform: scale(1.1) rotate(6deg);
+    -o-transform: scale(1.1) rotate(6deg);
+    -ms-transform: scale(1.1) rotate(6deg);
+    transform: scale(1.1) rotate(6deg);
+    }
+footer{
+    background-image: url("./img/fondo - copia.jpg");
+    color: gray;
+    text-align: center;
+    
+    padding: 3% 5% 10% 0%;
+} 
+footer h1{
+    color: #ff0000;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+#cont-footer{
+    display: flex;
+    justify-content: center;
+}
+#footer1{
+    float: left;
+    margin: 0% 3% 0% 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+#footer2{
+    float: left;
+    margin: 0% 3% 0% 3%;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+#footer3{
+    float: left;
+    margin: 0% 3% 0% 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* PRUEBA NAV BAR*/
+.navbar {
+    float: right;
+    overflow: hidden;
+    background-color: #232323;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+  
+  }
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.logo{
+    float: left;
+    padding-left: 3%;
+}
+.link-nav1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: end;
+    font-weight: 500;
+    margin: 10px 0px;
+}

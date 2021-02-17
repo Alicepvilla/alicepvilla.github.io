@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Usuario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+    <script src="http://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="Perfil_Usuario.js"></script>
+    <title>Mi Perfil</title>
+</head>
+<body>
+    
+    <div class="navbar">
+
+        <nav>
+            <div class="logo">
+                <img src="./img/menchoy-blanco-h.png" height="60px">
+            </div>
+
+            <a class="link-nav1" href="./carrocompras.html"> Carro de compras</a>
+            <a class="link-nav1" href="./Perfil_Usuario.html"> Perfil del Cliente</a>
+            <a class="link-nav1" href="./Nosotros.html"> Nosotros</a>
+            <a class="link-nav1" href="./Carta.html"> Menú</a>
+            <a class="link-nav1" href="./Menchoy.html"> Menchoy</a>
+            <a class="link-nav1" href="index.html">Inicio</a>
+        </nav>
+    </div>
+
+    <main>
+        <br><br>
+        <h1> Información Personal</h1>
+        
+        <br><br><br>
+        <section>          
+            <div id = "imagen">
+                <img class="avatar" id="avatar" src="./img/usuarios/11.png" />
+            </div>
+            <div>
+               <h1 id="username" class="username"> Jacob Vega</h1>
+                <br><br>
+            </div>
+        </section>
+        <br> <br>
+        <section class = "datos">
+            <ul>
+                <li> 
+                    <i class="icon mail"></i>
+                    <a id="mail" href="#">jacobvega@gmail.com</a>
+                </li>
+                <li> 
+                    <i class="icon telefono"></i>
+                    <a id="telefo" href="#"> +56 9 1235 6891</a></li>
+                <li>
+                    <i class="icon pago"></i>
+                    <a id="pago" href="#"> Visa Master Plop</a></li>
+                <li>
+                    <i class="icon pedidos"></i>
+                    <button id="historial" class="historial"><strong> Historial</strong></button></li>
+            </ul>
+          
+        </section>
+        <br>
+
+        <button id="actualizar" name= "actualizar" class="actualizar"> <strong>Actualizar Datos </strong></button>
+
+        <div id="popup" style="display: none;">
+            <div class="content-popup">
+                <div class="close"><a href="#" id="close"><img src="./img/close.png"/></a></div>
+                <div>
+                        <h2>Historial</h2>
+                        <table id="myTable" class="display" style="width:100%">
+                            <thead>
+                            <tr>
+                                <td>Producto</td>
+                                <td>Cantidad</td>
+                                <td>Fecha</td>
+                                <td>Local</td>
+                                <td>Pago</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Arrollado de Jamón-Queso</td>
+                                <td>4</td>
+                                <td>06/03/2020</td>
+                                <td>Menchoy</td>
+                                <td>$7200</td>
+                            </tr>
+                            <tr>
+                                <td>Camarón Emperador</td>
+                                <td>1</td>
+                                <td>17/04/2020</td>
+                                <td>Menchoy</td>
+                                <td>$12900</td>
+                            </tr>
+                            <tr>
+                                <td>Carne Mongoliana</td>
+                                <td>3</td>
+                                <td>15/05/2020</td>
+                                <td>Menchoy</td>
+                                <td>$17970</td>
+                            </tr>
+                            <tr>
+                                <td>Carne agridulce</td>
+                                <td>2</td>
+                                <td>05/06/2020</td>
+                                <td>Menchoy</td>
+                                <td>$13980</td>
+                            </tr>
+                            <tr>
+                                <td>Pollo Mongoliano</td>
+                                <td>2</td>
+                                <td>11/06/2020</td>
+                                <td>Menchoy</td>
+                                <td>$11980</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    <div style="float:left; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-overlay"></div>
+
+        <div id="popup2" style="display: none;">
+            <div class="content-popup">
+                <div class="close"><a href="#" id="close2"><img src="./img/close.png"/></a></div>
+                <div>
+                    <h2>Actualice los datos personales</h2>
+                    <h4>Cierre la pestaña cuando termine</h4>
+                    <section>          
+                        <div id = "imagen">
+                            <img class="avatar" id="avatar2" src="./img/usuarios/11.png" />
+                            <br><br>
+                            <button class="avatar2"> <p><strong>Avatar: </strong>
+                                    <select id="escoger" name="escoger">
+                                        <option id ="numero1" value="1" name="numero1">Imagen 1</option>
+                                        <option id ="numero2" value="2" name="numero2">Imagen 2</optio<n>
+                                        <option id ="numero3" value="3" name="numero1">Imagen 3</option>
+                                        <option id ="numero4" value="4" name="numero4">Imagen 4</option>
+                                        <option id ="numero5" value="5" name="numero5">Imagen 5</option>
+                                        <option id ="numero6" value="6" name="numero6">Imagen 6</option>
+                                        <option id ="numero7" value="7" name="numero7">Imagen 7</option>
+                                        <option id ="numero8" value="8" name="numero8">Imagen 8</option>
+                                        <option id ="numero9" value="9" name="numero9">Imagen 9</option>
+                                        <option id ="numero10" value="10" name="numero10">Imagen 10</option>
+                                        <option id ="numero11" value="11" name="numero11">Imagen 11</option>
+                                        <option id ="numero12" value="12" name="numero12">Imagen 12</option>
+                                        <option id ="numero13" value="13" name="numero13">Imagen 13</option>
+                                        <option id ="numero14" value="14" name="numero14">Imagen 14</option>
+                                        <option id ="numero15" value="15" name="numero16">Imagen 15</option>
+                                        <option id ="numero16" value="16" name="numero16">Imagen 16</option>
+                                        <option id ="numero17" value="17" name="numero17">Imagen 17</option>
+                                        <option id ="numero18" value="18" name="numero18">Imagen 18</option>
+                                        <option id ="numero19" value="19" name="numero19">Imagen 19</option>
+                                        <option id ="numero20" value="20" name="numero20">Imagen 20</option>
+                                    </select> </p>
+                            </button>
+                            <br><br>
+                        </div>
+                    </section>
+                    <form id="formulario">
+                        <div><label for="nombre"> Nombre:</label>
+                         <input type="text" id="nombre" name="nombre" class="mostrar"/><br><br>
+                     </div>
+                     <div>
+                        <label for="email">Mail :</label>
+                        <input type="text" id="email" name="email"  class="mostrar"/><br><br>
+                    </div> 
+                
+                     <div>
+                         <label for="tel">Teléfono:</label>
+                         <input type="text" id="tel" name="tel"  class="mostrar"/><br><br>
+                        
+                     </div>
+                    
+                     <div>
+                         <label for="mpago">Medio de Pago:</label>
+                         <input type="text" id="mpago" name="mpago"  class="mostrar"/><br><br>
+                 
+                     <div id="error"></div>
+                     <br>
+                     </form>
+                    <div style="float:left; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-overlay"></div>
+
+    </main>
+    <br><br>
+
+  
+    <footer>
+        <h1>Menchoy Restaurant</h1>
+        <div id="cont-footer">
+        <div id="footer1"><p>Dirección: Club Hípico #353, Santiago Centro, Chile</p></div>
+        <div id="footer2">
+            <a href="tel:+56226716011">Contacto: 226 7160 11</a><br>
+            <a href="tel:+56226724717">Contacto: 226 7247 17</a><br>
+        </div>
+       <div id="footer3">
+           <a href="https://www.instagram.com/menchoy.cl/" ><img src="./img/Carro_de_compras/instagram.png" width="50%" /></a>
+        </div>  
+    </div>
+    </footer>
+    </body>
+    
+    </html>
