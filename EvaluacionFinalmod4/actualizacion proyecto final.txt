@@ -1,0 +1,88 @@
+request.getRequestDispatcher("CrearEmpleado.jsp").forward(request, response);
+
+do get
+en agregar empleado
+
+AGREGAR EMPLEADO
+
+String nombre = request.getParameter("nombre");
+		String especialidad = request.getParameter("especialidad");
+		
+		Empleado emp = new Empleado(nombre,especialidad);
+		EmpleadoDao empleadodao = new EmpleadoDao();
+		
+		boolean agregar = false;
+		agregar = empleadodao.agregar(emp);
+		
+		String mensaje = "";
+		
+		if (agregar)
+			mensaje = "El cliente ha sido agregado exitosamente.";
+		else
+			mensaje = "Ocurrió un error al procesar la solicitud";
+		
+		request.setAttribute("ccmensaje", mensaje);
+		request.getRequestDispatcher("CrearEmpleado.jsp").forward(request, response);
+22:24
+int empleadoid = Integer.parseInt(request.getParameter("id"));
+		EmpleadoDao empleadodao = new EmpleadoDao();
+		Empleado emp = empleadodao.buscar(empleadoid);
+		request.setAttribute("regemp", emp);
+		request.getRequestDispatcher("Editarempleado.jsp").forward(request, response);
+
+
+EDITAR EMPLEADO
+
+int empleadoid = Integer.parseInt(request.getParameter("id"));
+		EmpleadoDao empleadodao = new EmpleadoDao();
+		Empleado emp = empleadodao.buscar(empleadoid);
+		request.setAttribute("regemp", emp);
+		request.getRequestDispatcher("Editarempleado.jsp").forward(request, response);
+
+
+ELIMINAR EMPLEADO (EN DO GET)
+
+int idempleado = Integer.parseInt(request.getParameter("idempleado"));
+		
+		Empleado emp = new Empleado();
+		emp.setIdempleado(idempleado);
+		
+		EmpleadoDao empleadodao = new EmpleadoDao();
+		
+		boolean eliminar = false;
+		eliminar = empleadodao.eliminar(emp);
+		String mensaje = "";
+		
+		if (eliminar)
+			mensaje = "El cliente ha sido eliminado exitosamente.";
+		else
+			mensaje = "Ocurrió un error al procesar la solicitud";
+		List<Empleado> listaemp = new ArrayList<Empleado>();
+		listaemp = empleadodao.listar();				
+		request.setAttribute("listaempleados", listaemp);
+		
+		request.setAttribute("ccmensaje", mensaje);
+		request.getRequestDispatcher("ListarEmpleados.jsp").forward(request, response);
+
+
+LISTADOEMPLEADOS (EN DO GET)
+
+EmpleadoDao emdao = new EmpleadoDao();
+		List<Empleado> listaemp = new ArrayList<Empleado>();
+		listaemp = emdao.listar();
+				
+		request.setAttribute("listaempleados", listaemp);
+		request.getRequestDispatcher("ListarEmpleados.jsp").forward(request, response);
+
+
+IEMPLEADODAO
+public boolean agregar(Empleado empleado);
+	public List<Empleado> listar();
+	public boolean actualizar(Empleado empleado);
+	public boolean eliminar (Empleado empleado);
+	public Empleado buscar(int idempleado);
+
+import java.util.List;
+import awl.modulo4.model.Empleado;
+
+
